@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-const homePage = () => {
+const HomePage = () => {
   const [something, setSomething] = useState('')
 
   return (
     <div>home page</div>
   )
 }
+
+export default HomePage;
