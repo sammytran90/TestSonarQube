@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HomePage = () => {
+  const [aState, setAState] = useState("some thing");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAState("something else1")
+    }, 5000)
+  })
   return (
-    <div>home page</div>
+    <div>{aState}</div>
   )
 }
 
